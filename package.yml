@@ -1,0 +1,34 @@
+name       : cargo
+version    : 0.11.0
+release    : 3
+source     :
+    - git|https://github.com/rust-lang/cargo.git : 0.11.0
+license    :
+    - Apache-2.0
+    - MIT
+    - GPL-2.0
+    - BSD-4-Clause
+    - OpenSSL
+    - BSD-3-Clause
+component  : programming
+summary    : The Rust package manager
+description: |
+    The Rust package manager
+builddeps  :
+    - rust
+rundeps    :
+    - rust
+setup      : |
+    ./configure --prefix=/usr \
+                --libdir=%libdir% \
+                --sysconfdir=/etc \
+                --datadir=/usr/share \
+                --enable-optimize
+                
+build      : |
+    %make
+install    : |
+    %make_install
+    install -d -D -m 00755 $installdir/usr/share/bash-completion
+    mv $installdir/usr/etc/bash_completion.d $installdir/usr/share/bash-completion/completions.d
+    rm -rfv $installdir/usr/etc
