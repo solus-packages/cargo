@@ -1,6 +1,6 @@
 name       : cargo
 version    : 0.11.0
-release    : 3
+release    : 4
 source     :
     - git|https://github.com/rust-lang/cargo.git : 0.11.0
 license    :
@@ -18,13 +18,9 @@ builddeps  :
     - rust
 rundeps    :
     - rust
-setup      : |
-    ./configure --prefix=/usr \
-                --libdir=%libdir% \
-                --sysconfdir=/etc \
-                --datadir=/usr/share \
-                --enable-optimize
-                
+setup      : "./configure --prefix=/usr \\\n            --libdir=%libdir% \\\n   \
+    \         --sysconfdir=/etc \\\n            --datadir=/usr/share \\\n        \
+    \    --enable-optimize\n            \n"
 build      : |
     %make
 install    : |
