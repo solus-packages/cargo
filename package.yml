@@ -1,8 +1,8 @@
 name       : cargo
-version    : 0.13.0
-release    : 5
+version    : 0.17.0
+release    : 6
 source     :
-    - git|https://github.com/rust-lang/cargo.git : 0.13.0
+    - git|https://github.com/rust-lang/cargo.git : 0.17.0
 license    :
     - Apache-2.0
     - MIT
@@ -14,13 +14,20 @@ component  : programming
 summary    : The Rust package manager
 description: |
     The Rust package manager
+networking : yes
 builddeps  :
     - rust
+    - cargo
+    - pkgconfig(libssl)
 rundeps    :
     - rust
-setup      : "./configure --prefix=/usr \\\n            --libdir=%libdir% \\\n   \
-    \         --sysconfdir=/etc \\\n            --datadir=/usr/share \\\n        \
-    \    --enable-optimize\n            \n"
+setup      : |
+    ./configure --prefix=/usr \
+                --libdir=%libdir% \
+                --sysconfdir=/etc \
+                --datadir=/usr/share \
+                --enable-optimize \
+                --release-channel=stable
 build      : |
     %make
 install    : |
