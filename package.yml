@@ -1,8 +1,8 @@
 name       : cargo
-version    : 0.23.0
-release    : 9
+version    : 0.25.0
+release    : 10
 source     :
-    - https://github.com/rust-lang/cargo/archive/0.23.0.tar.gz : f4bbe2a8719dbb8da20842235093f7f70f034d01633189e83f75897d68cd274f
+    - https://static.rust-lang.org/dist/rustc-1.24.0-src.tar.gz : bb8276f6044e877e447f29f566e4bbf820fa51fea2f912d59b73233ffd95639f
 license    :
     - Apache-2.0
     - MIT
@@ -19,21 +19,20 @@ networking : yes
 builddeps  :
     - pkgconfig(libssl)
     - cargo
-    - git       # check
     - rust
     - mdbook
 rundeps    :
     - rust
 build      : |
+    cd src/tools/cargo
     cargo build %JOBS% --release
 install    : |
+    cd src/tools/cargo
     cargo install %JOBS% --root=$installdir/usr
     rm $installdir/usr/.crates.toml
 
-    install -Dm 00644 src/etc/cargo.bashcomp.sh $installdir/usr/share/bash-completion/completions.d/cargo.bashcomp.sh
+    install -Dm 00644 src/etc/cargo.bashcomp.sh $installdir/usr/share/bash-completion/completions/cargo
     install -Dm 00644 src/etc/_cargo $installdir/usr/share/zsh/site-functions/_cargo
     install -Dm 00644 src/etc/man/cargo*.1 -t $installdir/usr/share/man/man1
     install -dm 00755 $installdir/usr/share/doc/cargo/html
     mdbook build --no-create --dest-dir $installdir/usr/share/doc/cargo/html src/doc/book
-check      : |
-    CFG_DISABLE_CROSS_TESTS=1 cargo test %JOBS% --no-fail-fast -- --test-threads=%YJOBS%
