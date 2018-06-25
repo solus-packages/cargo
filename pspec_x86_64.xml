@@ -26,17 +26,90 @@ dependencies and ensure that you&apos;ll always get a repeatable build.
 </Description>
         <PartOf>programming</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/cargo</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/cargo</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/css/font-awesome.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/FontAwesome.ttf</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.eot</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.svg</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.ttf</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.woff</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.woff2</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/ayu-highlight.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/book.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/book.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/clipboard.min.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/elasticlunr.min.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/faq.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/favicon.png</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/getting-started/first-steps.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/getting-started/index.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/getting-started/installation.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/build-cache.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/cargo-toml-vs-cargo-lock.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/continuous-integration.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/creating-a-new-project.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/dependencies.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/index.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/project-layout.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/tests.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/why-cargo-exists.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/guide/working-on-an-existing-project.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/highlight.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/highlight.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/images/Cargo-Logo-Small.png</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/images/auth-level-acl.png</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/images/org-level-acl.png</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/index.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/mark.min.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/print.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/build-scripts.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/config.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/environment-variables.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/external-tools.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/index.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/manifest.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/pkgid-spec.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/publishing.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/source-replacement.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/specifying-dependencies.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/reference/unstable.html</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/searcher.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/searchindex.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/tomorrow-night.css</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-bench.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-build.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-check.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-clean.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-doc.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-fetch.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-generate-lockfile.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-init.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-install.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-login.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-metadata.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-new.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-owner.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-package.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-pkgid.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-publish.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-run.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-rustc.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-rustdoc.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-search.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-test.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-uninstall.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-update.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-version.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo-yank.1</Path>
+            <Path fileType="man">/usr/share/man/man1/cargo.1</Path>
             <Path fileType="data">/usr/share/zsh/site-functions/_cargo</Path>
         </Files>
     </Package>
     <History>
-        <Update release="12">
-            <Date>2018-05-19</Date>
-            <Version>0.27.0</Version>
+        <Update release="13">
+            <Date>2018-06-23</Date>
+            <Version>0.28.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Nathan Caldwell</Name>
             <Email>saintdev@gmail.com</Email>
