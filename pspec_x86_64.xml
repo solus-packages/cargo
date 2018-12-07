@@ -2,12 +2,12 @@
     <Source>
         <Name>cargo</Name>
         <Packager>
-            <Name>Mateusz Mikuła</Name>
-            <Email>mati865@gmail.com</Email>
+            <Name>F. von Gellhorn</Name>
+            <Email>flinux@vongellhorn.ch</Email>
         </Packager>
         <License>Apache-2.0</License>
         <License>MIT</License>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
         <License>BSD-4-Clause</License>
         <License>OpenSSL</License>
         <License>BSD-3-Clause</License>
@@ -28,17 +28,21 @@ dependencies and ensure that you&apos;ll always get a repeatable build.
         <Files>
             <Path fileType="executable">/usr/bin/cargo</Path>
             <Path fileType="data">/usr/share/bash-completion/completions/cargo</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/css/font-awesome.css</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/FontAwesome.ttf</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.eot</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.svg</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.ttf</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.woff</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/_FontAwesome/fonts/fontawesome-webfont.woff2</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/.nojekyll</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/css/font-awesome.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/FontAwesome.ttf</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.eot</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.svg</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.ttf</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.woff</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.woff2</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/ayu-highlight.css</Path>
-            <Path fileType="doc">/usr/share/doc/cargo/html/book.css</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/book.js</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/clipboard.min.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/css/chrome.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/css/general.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/css/print.css</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/css/variables.css</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/elasticlunr.min.js</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/faq.html</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/favicon.png</Path>
@@ -76,6 +80,7 @@ dependencies and ensure that you&apos;ll always get a repeatable build.
             <Path fileType="doc">/usr/share/doc/cargo/html/reference/unstable.html</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/searcher.js</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/searchindex.js</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/searchindex.json</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/tomorrow-night.css</Path>
             <Path fileType="man">/usr/share/man/man1/cargo-bench.1</Path>
             <Path fileType="man">/usr/share/man/man1/cargo-build.1</Path>
@@ -107,12 +112,12 @@ dependencies and ensure that you&apos;ll always get a repeatable build.
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-08-06</Date>
-            <Version>0.29.0</Version>
+        <Update release="15">
+            <Date>2018-12-07</Date>
+            <Version>0.32.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Mateusz Mikuła</Name>
-            <Email>mati865@gmail.com</Email>
+            <Name>F. von Gellhorn</Name>
+            <Email>flinux@vongellhorn.ch</Email>
         </Update>
     </History>
 </PISI>
