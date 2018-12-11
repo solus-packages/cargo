@@ -1,6 +1,6 @@
 name       : cargo
 version    : 0.32.0
-release    : 15
+release    : 16
 source     :
     - https://static.rust-lang.org/dist/rustc-1.31.0-src.tar.gz : 9ad54dc0baf1db5fc6a79d54e71c439c82aff85cd96778978456f2958211ef06
 license    :
@@ -13,8 +13,7 @@ license    :
 component  : programming
 summary    : The Rust package manager
 description: |
-    Cargo is a tool that allows Rust projects to declare their various
-    dependencies and ensure that you'll always get a repeatable build.
+    Cargo is a tool that allows Rust projects to declare their various dependencies and ensure that you'll always get a repeatable build.
 networking : yes
 builddeps  :
     - pkgconfig(libssl)
@@ -24,7 +23,6 @@ builddeps  :
 rundeps    :
     - rust
 build      : |
-    %patch -p1 < $pkgfiles/0001-cargo-clipy-edition.patch
     cd src/tools/cargo
     cargo build %JOBS% --release
 install    : |
