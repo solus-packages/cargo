@@ -1,8 +1,8 @@
 name       : cargo
 version    : 0.32.0
-release    : 16
+release    : 17
 source     :
-    - https://static.rust-lang.org/dist/rustc-1.31.0-src.tar.gz : 9ad54dc0baf1db5fc6a79d54e71c439c82aff85cd96778978456f2958211ef06
+    - https://static.rust-lang.org/dist/rustc-1.32.0-src.tar.gz : 4c594c7712a0e7e8eae6526c464bf6ea1d82f77b4f61717c3fc28fb27ba2224a
 license    :
     - Apache-2.0
     - MIT

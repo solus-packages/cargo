@@ -34,6 +34,7 @@
             <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.ttf</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.woff</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/FontAwesome/fonts/fontawesome-webfont.woff2</Path>
+            <Path fileType="doc">/usr/share/doc/cargo/html/appendix/glossary.html</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/ayu-highlight.css</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/book.js</Path>
             <Path fileType="doc">/usr/share/doc/cargo/html/clipboard.min.js</Path>
@@ -110,8 +111,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-12-07</Date>
+        <Update release="17">
+            <Date>2019-01-21</Date>
             <Version>0.32.0</Version>
             <Comment>Packaging update</Comment>
             <Name>F. von Gellhorn</Name>
